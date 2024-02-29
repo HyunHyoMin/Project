@@ -20,16 +20,13 @@ while(1) :
     if user_rps == cpu_rps:
         print("사용자 :",user_rps,"/ 컴퓨터 :",cpu_rps)
         print("무승부!")
-        break
     elif (user_rps=="가위" and cpu_rps=="바위") or user_rps==("바위" and cpu_rps=="보") or (user_rps=="보" and cpu_rps=="가위"):
         print("사용자 :",user_rps,"/ 컴퓨터 :",cpu_rps)
         print('컴퓨터 승리!')
-        break
     elif (user_rps=="가위" and cpu_rps=="보") or (user_rps=="바위" and cpu_rps=="가위") or (user_rps=="보" and cpu_rps=="바위"):
         print("사용자 :",user_rps,"/ 컴퓨터 :",cpu_rps)
         print('사용자 승리!')
-        break
-while(1):
+
     stop = input("다시하시겠습니까? (y/n): ").lower()
     while (stop == "y" or stop == "n") == False:
             stop = input("유효한 입력이 아닙니다. (y/n): ").lower()
